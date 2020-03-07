@@ -1,6 +1,8 @@
 # Study_Note
 
-This repository is for recording what I study, and is organized by categories.
+This repository is for recording what I study, and is organized by categories. 
+
+This repository is a combination of two old repositories. they are unmanaged now. [ [old_TIL](https://github.com/batboy118/old_TIL) & [old_Study-Code](https://github.com/batboy118/old_Study-Code) ]
 
 You may use my repository for studying, but it would not be perfect.
 
