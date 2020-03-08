@@ -12,41 +12,41 @@ Thank you!
 
 ---
 
-[-  Links for Study](LinksForStudy)
+[-  Links for Study](LinksForStudy.md)
 
 [ - What I've Learned Today](WIL.md)
 
+<br>
+
 ### [ Category ]
 
-#### 1. CS Subject
+#### 1. [CS Subject](CS)
 
-- Algorithm & Data Structure
-
-- Operating System
-
-- Data Base
-
-- Network
+- [Algorithm](CS/Algorithm)
+- [Data Structure](CS/DataStructure)
+- [Operating System](CS/OperatingSystem)
+- [Network](CS/Network)
 
 
-#### 2. Laguage
+#### 2. [Language](Language)
 
-- C
-- C++
-- Python
+- [C](Language/C)
+- [C++](Language/C++)
+- [Python](Language/Python)
 
-#### 3. Web / App
+#### 3. [Web](Web)
 
-- HTML&CSS
+- [HTML and CSS](Web/HTML_CSS)
 
-#### 5. Linux System
+#### 4. [Linux System](Linux_System)
 
-- command line tool
-- Shell Script
+- [Shell](Linux_System/Shell)
 
-#### 6. Data Science
+#### 5. [Data Science](Data_science)
 
-#### 7. ETC
+- [NLP](Data_science/NLP)
 
-- GIT
+#### 6. [ETC](ETC)
+
+- [GIT](ETC/Git)
 

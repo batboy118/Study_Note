@@ -1,3 +1,3 @@
 ## What I've Learned Today
 
-> *a daily record of my new learning*
+> *daily records of my new learning*
