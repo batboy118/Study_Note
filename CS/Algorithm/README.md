@@ -4,9 +4,9 @@
 
 <br>
 
-[🏠HOME](/)
+[🏠Home](~/)
 
-**[◀Previous page ](..) **
+[◀Previous page ](../) 
 
 <br>
 

@@ -4,7 +4,7 @@
 
 <br>
 
-**[◀Previous page ](..) **
+[◀Previous page ](../) 
 
 <br>
 
