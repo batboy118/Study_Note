@@ -4,7 +4,7 @@
 
 <br>
 
-**[◀Previous page ](./) **
+[🏠Home](https://github.com/batboy118/Study_Note)
 
 <br>
 

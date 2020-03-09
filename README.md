@@ -20,33 +20,33 @@ Thank you!
 
 ### [ Category ]
 
-#### 1. [Core Subjects of CS](CS)
+#### 1. [Core Subjects of CS](CS/README.md)
 
-- [Algorithm](CS/Algorithm)
-- [Data Structure](CS/DataStructure)
-- [Operating System](CS/OperatingSystem)
-- [Network](CS/Network)
+- Algorithm
+- Data Structure
+- Operating System
+- Network
 
 
-#### 2. [Language](Language)
+#### 2. [Language](Language/README.md)
 
-- [C](Language/C)
-- [C++](Language/C++)
-- [Python](Language/Python)
+- C
+- C++
+- Python
 
-#### 3. [Web](Web)
+#### 3. [Web](Web/README.md)
 
-- [HTML and CSS](Web/HTML_CSS)
+- HTML & CSS
 
-#### 4. [Linux System](Linux_System)
+#### 4. [Linux System](Linux_System/README.md)
 
-- [Shell](Linux_System/Shell)
+- Shell
 
-#### 5. [Data Science](Data_science)
+#### 5. [Data Science](Data_science/README.md)
 
-- [NLP](Data_science/NLP)
+- NLP
 
-#### 6. [ETC](ETC)
+#### 6. [ETC](ETC/README.md)
 
-- [GIT](ETC/Git)
+- GIT
 

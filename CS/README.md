@@ -4,19 +4,17 @@
 
 <br>
 
-[◀Previous page ](../) 
+[🏠Home](https://github.com/batboy118/Study_Note)
 
 <br>
 
 ### [ Category ]
 
-#### 1. [Algorithm](Algorithm)
+#### 1. [Algorithm](Algorithm/README.md)
 
+#### 2. [Data Structure](DataStructure/README.md)
 
+#### 3. [Operating System](OperatingSystem/README.md)
 
-#### 2. [Data Structure](DataStructure)
-
-#### 3. [Operating System](OperatingSystem)
-
-#### 4. [Network](Network)
+#### 4. [Network](Network/README.md)
 
