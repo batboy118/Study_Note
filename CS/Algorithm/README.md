@@ -12,9 +12,9 @@
 
 ### [ Category ]
 
-[00. 복잡도_complexity](00.복잡도_complexity.md)
+0. [복잡도_complexity](00.복잡도_complexity.md)
 
-[01. 정렬_Sort](01.정렬_Sort.md)
+1. [정렬_Sort](01.정렬_Sort.md)
 
 ### [ To do list ]
 
