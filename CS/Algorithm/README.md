@@ -13,8 +13,9 @@
 ### [ Category ]
 
 0. [복잡도_complexity](00.복잡도_complexity.md)
-
 1. [정렬_Sort](01.정렬_Sort.md)
+2. [완전탐색_Brute-force](02.완전탐색_Brute-force.md)
+3. [탐욕기법_Greedy_Algorithm](03.탐욕기법_Greedy_Algorithm.md)
 
 ### [ To do list ]
 
