@@ -1,4 +1,4 @@
-# CS
+# 🖥CS
 
 > Core Subjects of Computer Science
 

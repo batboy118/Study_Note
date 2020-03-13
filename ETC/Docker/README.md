@@ -12,9 +12,9 @@
 
 ### [ Category ]
 
-0. [Docker를 쓰는 이유](./00.Docker를 쓰는 이유.md)
-1. [Docker 기본 용어 및 명령어](./01.Docker 기본 용어 및 명령어.md)
-2. [Docker에 Server 설치하기_01](./02. Docekr에 Server 설치하기_01.md)
+0. [Docker를 쓰는 이유](00.Docker를-쓰는-이유.md)
+1. [Docker 기본 용어 및 명령어](01.Docker-기본 용어-및-명령어.md)
+2. [Docker에 Server 설치하기_01](02.Docekr에-Server-설치하기-01.md)
    - 컨테이너상에서 직접 설치하는 법
-3. [Docker에 Server 설치하기_02](./03. Docekr에 Server 설치하기_02.md)
+3. [Docker에 Server 설치하기_02](03.Docekr에-Server-설치하기-02.md)
    - Dockerfile을 이용하여 설치하는 법
