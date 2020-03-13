@@ -100,11 +100,11 @@
 
   - Dockerfile을 작성할 때 RUN은 독립적으로 동작한다는 것을 알게 되었다.
 - 예를 들어, service를 실행 시킨 상태에서 설정이 필요한 경우, `RUN service 서비스이름 start && 명령어` 이런식으로 동작시켜야 한다. 
+  
   - `RUN service 서비스이름 start` ,`RUN 명령어` 이렇게 따로따로 동작시키면 안된다.
   
 - **Docker nginx 기반 컨테이너의 Background 실행에 대한 고찰**
 
   - daemon off 기능과 컨테이너 서버가 백그라운드에서 유지하면서 동작하는 내용이 잘 정리가 안되어 정리함.
 
-     [정리 자료](ETC/Docker/03. Docekr에 Server 설치하기_02.md/##🐳컨테이너 Background 실행에 대한 고찰)
-
+     [정리 자료](ETC/Docker/03.Docekr에_Server_설치하기_02.md#컨테이너-background-실행에-대한-고찰)
