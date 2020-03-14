@@ -16,6 +16,10 @@
 1. [정렬_Sort](01.정렬_Sort.md)
 2. [완전탐색_Brute-force](02.완전탐색_Brute-force.md)
 3. [탐욕기법_Greedy_Algorithm](03.탐욕기법_Greedy_Algorithm.md)
+4. [2차원 배열 2_Dimensional Array](04.2차원_배열_2_Dimensional_Array.md)
+5. [멱집합, 순열, 조합_Power set, Permutation, Combination](05.멱집합_순열_조합_Power_set_Permutation_Combination.md)
+6. [검색_Search](06.검색_Search.md)
+7. [후위 표기식](07.후위_표기식.md)
 
 ### [ To do list ]
 
