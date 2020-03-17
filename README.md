@@ -1,6 +1,6 @@
 # 📖Study_Note
 
-개인적인 학습 내용을 기록하는 저장소로 과거에 사용하던 두개의 저장소를 합쳐 정리하였습니다. (🔨정리중) 
+개인적인 학습 내용을 기록하는 저장소로 과거에 사용하던 두개의 저장소를 합쳐 정리하였습니다. (🔨정리중)
 
 [ [old_TIL](https://github.com/batboy118/old_TIL) & [old_Study-Code](https://github.com/batboy118/old_Study-Code) ]
 
@@ -50,4 +50,5 @@ What I've Learned Today
 
 - GIT
 - Docker
+- MLX
 
