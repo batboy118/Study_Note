@@ -26,8 +26,10 @@
 ### [ 강의 ]
 
 - [ ] [경성대 양희재](http://www.kocw.net/home/search/kemView.do?kemId=978503)
+- [ ] [원광대_이현창](http://www.kocw.net/home/search/kemView.do?kemId=1123889)
 - [ ] [서울대 홍성수](http://snui.snu.ac.kr/ocw/index.php?mode=view&id=623#class_room-tab)
 - [ ] [이화여대 반효경 ](http://www.kocw.net/home/search/kemView.do?kemId=1046323)
+- [ ] [고려대_최린](http://www.kocw.net/home/search/kemView.do?kemId=1349238)
 
 
 
