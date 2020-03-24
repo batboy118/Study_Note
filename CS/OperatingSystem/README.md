@@ -18,8 +18,8 @@
 3. [이중모드 하드웨어 보호](03.이중모드_하드웨어_보호.md)
 4. [운영체제 서비스](04.운영체제_서비스.md)
 5. [프로세스 관리](05.프로세스_관리.md)
-6. [쓰레드](06.쓰레드.md)
-7. [CPU 스케줄링](07.CPU_스케줄링.md)  //정리해야함
+6. [CPU 스케줄링](07.CPU_스케줄링.md)
+7. [쓰레드](06.쓰레드.md)
 8. [프로세스_동기화](08.프로세스_동기화.md)
 
 
@@ -28,6 +28,7 @@
 ### [ 강의 ]
 
 - [ ] [경성대 양희재](http://www.kocw.net/home/search/kemView.do?kemId=978503)
+  - 참고 : https://velog.io/@codemcd/
 - [ ] [원광대_이현창](http://www.kocw.net/home/search/kemView.do?kemId=1123889)
 - [ ] [서울대 홍성수](http://snui.snu.ac.kr/ocw/index.php?mode=view&id=623#class_room-tab)
 - [ ] [이화여대 반효경 ](http://www.kocw.net/home/search/kemView.do?kemId=1046323)
