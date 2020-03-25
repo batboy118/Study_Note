@@ -38,17 +38,15 @@ What I've Learned Today
 
 - HTML & CSS
 
-#### 4. [Linux System](Linux_System/README.md)
-
-- Shell
-
 #### 5. [Data Science](Data_science/README.md)
 
 - NLP
 
 #### 6. [ETC](ETC/README.md)
 
-- GIT
+- Linux
+
+- Git
 - Docker
 - MLX
 
