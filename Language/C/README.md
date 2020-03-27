@@ -14,9 +14,8 @@
 
 ### [ Category ]
 
-1. [C Programming A Modern Approach](01.CProgrammingAModernApproach.md)
+1. [C Programming A Modern Approach](01.CProgrammingAModernApproach.md) (🔨18 ~ 21장 정리 필요)
 
-   > (🔨18 ~ 21장 정리 필요)
+2. [C for Linux](02.CForLinux.md) (진행중)
 
-2. C for Linux
-
+   - [이거](https://www.joinc.co.kr/w/Site/C/Documents/CprogramingForLinuxEnv/Ch3_StartC#toc) 보면서 학습 및 정리 필요
