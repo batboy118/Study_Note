@@ -1,8 +1,6 @@
 # 🆑C
 
-> C Programming A Modern Approach(K.N.King)를 보면서 정리하였고, 초반부는 Minha Ju님 께서 번역하신 [C 프로그래밍: 현대적 접근](https://wikidocs.net/26943)을 많이 인용하였습니다.
->
-> 추가적으로, 
+> C언어에 대해서 학습한 내용을 학습하였습니다. 책과 블로그를 참고하여 작성하였습니다.
 
 <br>
 
@@ -16,6 +14,4 @@
 
 1. [C Programming A Modern Approach](01.CProgrammingAModernApproach.md) (🔨18 ~ 21장 정리 필요)
 
-2. [C for Linux](02.CForLinux.md) (진행중)
-
-   - [이거](https://www.joinc.co.kr/w/Site/C/Documents/CprogramingForLinuxEnv/Ch3_StartC#toc) 보면서 학습 및 정리 필요
+2. [Linux에서 C 사용하기](02.CForLinux.md) (재정리 필요)

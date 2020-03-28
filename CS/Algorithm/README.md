@@ -24,12 +24,3 @@
 9. [패턴매칭 Pattern Matching.md](09.패턴매칭_Pattern_Matching.md)
 10. [피보나치수열 Fibonacci numbers.md](10.피보나치수열_Fibonacci numbers.md) (cf. DP)
 11. [그래프탐색 Graph Search](11.그래프탐색_GraphSearch.md)  (cf. DFS / BFS)
-
-
-
-### [ To do list ]
-
-- [ ] [SW Expert Academy](swexpertacademy.com) 학습 내용 정리
-- [ ] [권오흠 교수님 알고리즘 강좌](https://www.inflearn.com/course/알고리즘-강좌#description)
-- [ ] 종만북 1,2권
-- [ ] 기타 공부하면서 알게된 내용 Update

@@ -67,7 +67,7 @@
 
 - [Dictionary of Algorithms and Data Structures]( https://xlinux.nist.gov/dads/)
 - [Na982]( https://na982.tistory.com/ )
-- [라이님 블로그(알고리즘에 엄청난 내공이 느껴짐)](https://kks227.blog.me/220775134486)
+- [라이님 블로그](https://kks227.blog.me/220775134486)
 - [코딩테스트 대비 특강]( [http://www.secmem.org/blog/2019/03/07/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8C%80%EB%B9%84-%ED%8A%B9%EA%B0%95/](http://www.secmem.org/blog/2019/03/07/코딩테스트-대비-특강/) )
 - [자주 하는 실수 모음](https://algospot.com/wiki/read/자주_하는_실수_모음)
 - [백준 자주 틀리는 요인]( https://www.acmicpc.net/blog/view/70 )
@@ -128,9 +128,12 @@
 
 **강의**
 
-- [경성대 KOCW](http://www.kocw.net/home/search/kemView.do?kemId=978503)
-- [서울대 홍성수 교수님 강의](http://snui.snu.ac.kr/ocw/index.php?mode=view&id=623#class_room-tab)
-- [이화여대 ](http://www.kocw.net/home/search/kemView.do?kemId=1046323)
+- [경성대 양희재 교수님](http://www.kocw.net/home/search/kemView.do?kemId=978503)
+  - 참고 : https://velog.io/@codemcd/
+- [ ] [원광대_이현창 교수님](http://www.kocw.net/home/search/kemView.do?kemId=1123889)
+- [ ] [서울대 홍성수 교수님](http://snui.snu.ac.kr/ocw/index.php?mode=view&id=623#class_room-tab)
+- [ ] [이화여대 반효경 교수님](http://www.kocw.net/home/search/kemView.do?kemId=1046323)
+- [ ] [고려대_최린 교수님](http://www.kocw.net/home/search/kemView.do?kemId=1349238)
 
 **책**
 
@@ -144,14 +147,27 @@
 
 **강의**
 
--  [컴퓨터 네트워크 강의](http://www.kocw.net/home/search/kemView.do?kemId=1046412) 이화여대
--  [컴퓨터 네트워크 강의](http://www.kocw.net/home/search/kemView.do?kemId=1169634) 한양대
--  [유투브](https://www.youtube.com/watch?v=LUTKYykw0Yw&list=PLXvgR_grOs1BjBZiePPZMR1PmZybazxg6)  강의
+-  [목포해양대학교 김건웅 교수님](http://www.kocw.net/home/cview.do?cid=7b369c5e6997010c)
+-  [이화여대 이미정  교수님](http://www.kocw.net/home/cview.do?cid=e44bdd9b3a3f9bb5)
+-  [한국항공대학교 김철기  교수님](http://www.kocw.net/home/search/kemView.do?kemId=1159726)
+-  [ ] [한양대학교 이석복  교수님](http://www.kocw.net/home/search/kemView.do?kemId=1312397)
+-  [ ] [유투브](https://www.youtube.com/watch?v=LUTKYykw0Yw&list=PLXvgR_grOs1BjBZiePPZMR1PmZybazxg6)  강의
 -  [KHAN 아카데미 인터넷입문](https://ko.khanacademy.org/computing/computer-science/internet-intro#internet-works-intro)
 
 **책**
 
 -  [그림으로 배우는 HTTP & Network Basic](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788931447897)
+
+
+
+#### 컴퓨터 구조
+
+**강의**
+
+- [숭실대 김병기](http://www.kocw.net/home/search/kemView.do?kemId=998138)
+- [가톨릭대 서효중](http://www.kocw.net/home/search/kemView.do?kemId=695204)
+- [영남대 최규상](http://www.kocw.net/home/search/kemView.do?kemId=1125218)
+- [서울대 민상렬](https://olc.kr/course/course_online_view.jsp?id=240&cid=519)
 
 
 

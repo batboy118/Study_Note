@@ -1,6 +1,8 @@
 # 🎲Operating System
 
-> 운영체제 학습
+> 운영체제를 학습하고 정리하였습니다.
+>
+> [경성대 양희재 교수님](http://www.kocw.net/home/search/kemView.do?kemId=978503)의 온라인 강의를 듣고,  [codemcd님의 블로그](https://velog.io/@codemcd/)를 참고하여 정리했습니다.
 
 <br>
 
@@ -23,23 +25,3 @@
 8. [프로세스_동기화](08.프로세스_동기화.md)
 9. [주기억장치 관리](09.주기억장치관리.md)
 10. [가상메모리](10.가상메모리.md)
-
-
-### [ 강의 ]
-
-- [ ] [경성대 양희재 교수님](http://www.kocw.net/home/search/kemView.do?kemId=978503)
-  - 참고 : https://velog.io/@codemcd/
-- [ ] [원광대_이현창 교수님](http://www.kocw.net/home/search/kemView.do?kemId=1123889)
-- [ ] [서울대 홍성수 교수님](http://snui.snu.ac.kr/ocw/index.php?mode=view&id=623#class_room-tab)
-- [ ] [이화여대 반효경 교수님](http://www.kocw.net/home/search/kemView.do?kemId=1046323)
-- [ ] [고려대_최린 교수님](http://www.kocw.net/home/search/kemView.do?kemId=1349238)
-
-
-
-#### 참고)컴퓨터 구조 강의
-
-- [ ] [숭실대 김병기](http://www.kocw.net/home/search/kemView.do?kemId=998138)
-- [ ] [가톨릭대 서효중](http://www.kocw.net/home/search/kemView.do?kemId=695204)
-- [ ] [영남대 최규상](http://www.kocw.net/home/search/kemView.do?kemId=1125218)
-- [ ] [서울대 민상렬](https://olc.kr/course/course_online_view.jsp?id=240&cid=519)
-
