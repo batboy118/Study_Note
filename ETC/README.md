@@ -12,7 +12,7 @@
 
 #### 1. [Linux](Linux/README.md)
 
-#### 2.  [Git](Git/README.md)
+#### 2. [Git](Git/README.md)
 
 #### 3. [Docker](Docker/README.md)
 
