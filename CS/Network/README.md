@@ -6,7 +6,7 @@
 
 [🏠Home](https://github.com/batboy118/Study_Note)
 
-[◀Previous page ](../)
+[◀Previous page ](../README.md)
 
 <br>
 

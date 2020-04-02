@@ -6,7 +6,7 @@
 
 [🏠Home](https://github.com/batboy118/Study_Note)
 
-[◀Previous page ](../)
+[◀Previous page ](../README.md)
 
 <br>
 
@@ -22,7 +22,7 @@
 7. [후위 표기식](07.후위_표기식.md)  (cf. stack)
 8. [문자열 String](08.문자열_String.md)
 9. [패턴매칭 Pattern Matching.md](09.패턴매칭_Pattern_Matching.md)
-10. [피보나치수열 Fibonacci numbers.md](10.피보나치수열_Fibonacci numbers.md) (cf. DP)
+10. [피보나치수열 Fibonacci numbers.md](10.피보나치수열_Fibonacci_numbers.md) (cf. DP)
 11. [그래프탐색 Graph Search](11.그래프탐색_GraphSearch.md)  (cf. DFS / BFS)
 12. [백트리캥_Backtraking](12.백트래킹_backtracking.md)
 13. [분할정복 _Divide And Conquer](13.분할정복_DivideAndConquer.md)
