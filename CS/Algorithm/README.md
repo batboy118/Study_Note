@@ -27,5 +27,6 @@
 12. [백트리캥_Backtraking](12.백트래킹_backtracking.md)
 13. [분할정복 _Divide And Conquer](13.분할정복_DivideAndConquer.md)
 14. [상호배타집합](14.상호배타집합.md)
-15. [그래프의 최소 비용 문제]()
+15. [그래프의 최소 비용 문제](15.그래프의최소비용문제.md)
+16. [해싱](16.해싱)
 
