@@ -26,7 +26,7 @@
 
 #### 1. [Core Subjects of CS](CS/README.md)
 
-- Algorithm / Data Structure / Operating System / Network /
+- Algorithm / Data Structure / Operating System / Network / Database
 
 
 #### 2. [Language](Language/README.md)
