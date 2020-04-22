@@ -93,7 +93,7 @@
 
 
 
-플레이어가 회전할 때, 카메라도 회전하기 때문에, 방향 벡터와 평면 벡터 또한 회전하기 된다. 그러면, 광선들도 자동적으로 화전하게 된다.
+플레이어가 회전할 때, 카메라도 회전하기 때문에, 방향 벡터와 평면 벡터 또한 회전하게 된다. 그러면, 광선들도 자동적으로 화전하게 된다.
 
 ![image](https://user-images.githubusercontent.com/53181778/77065927-14255780-69da-11ea-97dc-b109d11243c6.png)
 
@@ -499,3 +499,6 @@ if (keyDown(SDLK_LEFT))
 카메라 평면이 방향 벡터에 수직이 아닌 경우, 세계는 기울어진 것처럼 보인다.
 
 ![img](https://lodev.org/cgtutor/images/raycastingskewed.gif)
+
+## 4. Textured Raycaster
+
