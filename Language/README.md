@@ -16,7 +16,7 @@
 
 #### 3. [Python](Python/README.md)
 
-#### 4. Java Script
+#### 4. [JavaScript](JavaScript/README.md)
 
 
 
