@@ -1,0 +1,812 @@
+ES 6
+
+> ES6는 ES2015로 대부분의 브라우저에서 지원하고 있다. Babel을 이용해서 ES6를 ES5로 변환도 가능하다.
+
+[🏠Home](https://github.com/batboy118/Study_Note)
+
+[◀Previous page ](./README.md)
+
+---
+
+<!-- TOC -->
+
+- 
+
+<!-- /TOC -->
+
+## 1. Scope
+
+### 1.1. let
+
+ES5까지(var)는 **function 단위**의 지역변수를 가졌고, 지역변수에 해당 변수가 없다면 상위 단계에서 변수를 찾는다.
+
+```javascript
+function home(){
+    var homevar = "homevar";
+    for(var i=0; i<100; i++){
+    }
+    console.log(i)
+}
+
+home();
+```
+
+- 결과 : 100
+
+하지만, ES6부터는 **let**을 지원하게 되었고, let은 **block 단위의 scope**를 지원하다.
+
+```javascript
+function home(){
+    var homevar = "homevar";
+    for(let i=0; i<100; i++){
+    }
+    console.log(i)
+}
+
+home();
+```
+
+- 에러 발생
+
+### 1.2. closure
+
+```javascript
+var list = document.querySelectorAll("li");
+for(var i = 0; i<list.length; i++){
+    list[i].addEventListener("clock",funciton(){
+        console.log(i + "번째 List 입니다.")
+    });
+}
+```
+
+var를 사용하면, 어떤 list를 클릭하더라도, 마지막 번호에 해당하는 리스트라고 출력될 것이다. 그 이유는 i를 var로 선언하면 콜백함수에서 i를 전역변수의 공간에서 찾게 된다. 즉, 똑같은 i를 공유하게 되기 때문이다.
+
+```javascript
+var list = document.querySelectorAll("li");
+for(let i = 0; i<list.length; i++){
+    list[i].addEventListener("clock",funciton(){
+        console.log(i + "번째 List 입니다.")
+    });
+}
+```
+
+반대로, let을 쓰면 각 리스트에 맞는 list를 출력하게 된다. 이는, 각각의 i를 공유하지 않기 때문이다. i는 block 스코프를 가지고 각각의 콜백 함수에서 i는 지역변수화가 된다.
+
+### 1.3. Const
+
+값을 변경시킬 수 없도록 상수화 시킴
+
+값의 변경이 필요한 경우는 `let`을 그 외에는 `const`를 사용하는 것이 좋다.
+
+> const라도 배열이나 오브젝트 내부의 값을 변경하는 것은 가능하다.
+
+### 1.4. immutable array
+
+새로운 배열을 만들 때 기존의 배열이 변하지 않게 새로 array만는 방법.
+
+```javascript
+const list = ["apple", "orange"];
+const list 2 = [].concat(list, "banana");
+console.log(list === list2);
+```
+
+list에 바나나를 추가해서 새로운 리스트를 만들고 싶은 때는 , `list 2 = [].concat(list, "banana");`처럼 만들 수 있다.
+
+## 2. String
+
+```javascript
+let str = "hello world ! ^^ ~~";
+let matchstr = "hello";
+console.log(str.startsWith(matchstr));
+console.log(str.endWith(matchstr));
+console.log(str.includes(matchstr));
+```
+
+- `str.startsWith(matchstr)` : 시작이 matchstr과 동일한지 체크해서 true / false 를 리턴
+- `str.endWith(matchstr)` : 마지막이 matchstr과 동일한지 체크해서 true / false 를 리턴
+- `console.log(str.includes(matchstr));` : 문자열이 포함되어 있는지 체크
+
+## 3. Array
+
+### 1.1 for of
+
+```javascript
+var data = [1, 2, undefined, NaN, nul, ""];
+
+for(let item of data){
+    consloe.log(item);
+}
+```
+
+- 각 값 차제를 순서대로 item에 저장하며 순회
+- 배열 뿐만 아니라 string도 가능하다.
+
+### 1.2. spread operator
+
+```javascript
+const pre = ["apple", "orange"];
+const newData = [...pre];
+console.log(pre, newData);
+```
+
+- `...배열` 을 쓰면 내부에 있는 모든 값을 나열한 것과 같다.
+- pre와 newData는 서로 다른 배열이다. (참조하지 않음)
+
+- pre의 모든 원소를 []안에 넣고 새로 생성한 것
+
+```javascript
+const pre = ["apple", "orange"];
+const newData = [1, 2, ...pre, 3, 4];
+console.log(pre, newData);
+```
+
+- 배열 내부에도 사용 가능
+
+```javascript
+function sum(a,b,c){
+	return a+b+c;
+}
+
+let pre = [100,200,300];
+//sum.apply(null, pre);
+console.log(sum(...pre));
+```
+
+### 1.3. from
+
+```javascript
+function addMark(){
+    console.log(arguments);
+    let newArray = Array.from(arguments);
+    console.log(newArray);
+    let newData = newArray.map(function(value){
+        return value + "!";
+    });
+    
+    console.log(newData);
+}
+addMark(1,2,3,4,5,6);
+```
+
+- Array.from()을 이용해서 어떠한 가짜 배열(object)을 list로 만들어 준다.
+
+## 4. Object
+
+간단히 객체 생성하기
+
+```javascript
+function getObj(){
+    const name = "crong";
+    const getName = function(){
+        return name;
+    }
+    const setName = function(newname){
+        name = newname;
+    }
+    const printName = function(){
+        console.log(name);
+    }
+    return {getName, setName}
+//  return {
+//      getName : getName,
+//      setName : setName
+//  }
+}
+
+var obj = getObj();
+console.log(obj);
+```
+
+- key와 변수(밸류값)이 일치하면 하나만 써도 된다.
+
+## 5. Destructuring
+
+### 5.1. Destructuring Array
+
+```javascript
+let data = ["crong", "honux", "jk", "jinny"];
+let jisu = data[0];
+let jung = data[2];
+console.log(jisu, jung);
+```
+
+위의 코드를 아래와 같이 표현 가능
+
+```javascript
+let data = ["crong", "honux", "jk", "jinny"];
+let [jisu,,jung] = data;
+console.log(jisu, jung);
+```
+
+### 5.2. Destructuring Object
+
+```javascript
+let obj = {
+	name : "crong",
+    address : "korea",
+    age : 10
+}
+
+let {name, age} = obj;
+console.log(name,age);
+
+let {name:myName, age:myAge} = obj;
+console.log(myName, myAge);
+```
+
+- KEY와 같은 이름의 변수를 쓰고 싶다면, 그냥 해당 KEY만 입력하면 된다.`let {name, age} = obj;`
+- 원하는 변수명이 있다면 `KEY:변수명`식으로 사용한다. `let {name:myName, age:myAge} = obj;`
+
+### 5.3. Destructuring 활용 JSON 파싱
+
+```javascript
+var news = [
+    {
+        "title" : "sbs",
+        "imgurl" : "http://static.naver.net/newsstand/2020/sbs",
+        "newlist" : [
+            	"mbc 1번 뉴스",
+            	"mbc 2번 뉴스"
+        ]
+    },
+    {
+        "title" : "mbc",
+        "imgurl" : "http://static.naver.net/newsstand/2020/mbc",
+        "newlist" : [
+            	"mbc 1번 뉴스",
+            	"mbc 2번 뉴스"
+        ]
+    },
+]
+
+let [,mbc] = news; // 뉴스 list에서 두 번째 뉴스만 mbc라는 변수로 파싱
+let {title, imgurl}; //mbc 뉴스 객체에서,  이미지 url만 파싱
+console.log(imurl);
+
+//아래와 같이도 가능
+let [,{title, imgurl}] = news;
+```
+
+### 5.4. Destructuring 활용 이벤트 객체 전달
+
+```javascript
+var news = [
+    {
+        "title" : "sbs",
+        "imgurl" : "http://static.naver.net/newsstand/2020/sbs",
+        "newlist" : [
+            	"mbc 1번 뉴스",
+            	"mbc 2번 뉴스"
+        ]
+    },
+    {
+        "title" : "mbc",
+        "imgurl" : "http://static.naver.net/newsstand/2020/mbc",
+        "newlist" : [
+            	"mbc 1번 뉴스",
+            	"mbc 2번 뉴스"
+        ]
+    },
+]
+
+function getNewsList([,{newslist}]){
+    console.log(newslist);
+}
+```
+
+- 함수의 매개변수로 Destructuring 을 활용할 수 있다.
+
+```javascript
+document.querySelector("div").addEventListener("click", function({target}){
+    consol.log(target.tagName);
+});
+```
+
+- 그 개념을 `addEventListener`에 활용하면 이렇게 쓸 수 있다.
+
+## 6. Set & WeakSet
+
+### 6.1. Set
+
+```javascript
+let mySet = new Set();
+
+mySet.add("crong");
+mySet.add("hary");
+mySet.add("crong")
+
+console.log(mySet);
+
+console.log(mySet.has("crong"));
+console.log(mySet.has("rupy"));
+
+mySet.add("rupy");
+mySet.delete("crong");
+
+mySet.forEach(function (v){
+    console.log(v);
+})
+```
+
+- 중복없이 유일한 값을 저장하는 자료 구조
+- 유니크 한 값을 체크할 때 유용
+
+### 6.2. WeakSet
+
+```javascript
+let arr = [1,2,3,4];
+let arr2 = [5,6,7,8];
+let obj = {arr, arr2};
+
+let ws = new WeakSet();
+
+ws.add(arr);
+ws.add(arr2);
+ws.add(obj);
+//ws.add(111);
+//ws.add("111");
+//ws.add(null);
+
+
+arr3 = [1,2,3,4];
+arr = null;
+
+console.log(ws);
+console.log(ws.has(arr), ws.has(arr2), ws.has(arr3));
+
+arr2 = null;
+
+console.log(ws);
+console.log(ws.has(arr), ws.has(arr2), ws.has(arr3));
+```
+
+- WeakSet : 객체(list, object, 함수 등)만 저장 가능한 Set (string, 숫자는 안됨)
+- `arr = null;` null로 바꾸어도 객체는 set에 존재하는 것 처럼보이지만, 가비지 컬렉터에 의해 제거된 상태는 아니지만, 실제로는 포함하는지 않게 되어 false가 나온다.
+
+## 7. Map & WeakMap
+
+```javascript
+let wm = new WeakMap();
+let myfun = function(){};
+
+wm.set(myfun,0);
+console.log(wm);
+
+let count = 0;
+for(let i=0; i<10; i++){
+    count = wm.get(myfun);
+    count++;
+    wm.set(myfun, count);
+}
+
+console.log(wm);
+
+myfun = null;
+console.log(wm);
+console.log(wm.get(myfun));
+console.log(wm.has(myfun));
+```
+
+- map은 `key : value`구조
+
+### 7.2. WeakMap을 이용한 클래스 인턴스 변수 보호
+
+```javascript
+function Area(height, width){
+    this.height = height;
+    this.width = width;
+}
+
+Area.prototype.getArea= function() {
+    return this.height * this.width;
+}
+
+let myarea = new Area(10, 20);
+console.log(myarea.getArea());
+```
+
+위 코드를 아래와 같이 사용할 수 있다.
+
+```javascript
+const wm = new WeakMap();
+
+function Area(height, width){
+    wm.set(this, {height, width});
+}
+
+Area.prototype.getArea = function() {
+    const {height, width} = wm.get(this);
+    return height * width;
+}
+
+let myarea = new Area(10, 20);
+console.log(myarea.getArea());
+```
+
+## 8. Template
+
+### 8.1. template 처리
+
+json으로 응답을 받고, 자바스크립트 object로 변환 후 어떤한 데이터처리 조작을 한 후에 dom에 추가할 때 ``을 쓰면 유용하다. 데이터 + HTML 문자열의 결합이 필요한경우에 사용한다.
+
+```javascript
+const data = [
+    {
+        name : "coffe-good",
+        order : true,
+        items : ['americano', 'milk', 'green-tea']
+    },
+    {
+        name : "moonbucks",
+        order : false,
+    }
+]
+    
+const template = `<div>welcome ${data[0].name} !!`;
+console.log(template);
+```
+
+### 8.2. Tagged Template literals
+
+```javascript
+const data = [
+    {
+        name : "coffe-good",
+        order : true,
+        items : ['americano', 'milk', 'green-tea']
+    },
+    {
+        name : "moonbucks",
+        order : false,
+    },
+    {
+        name : "mono-coffee",
+        order : true,
+        items : ['americano', 'latte']
+    }
+]
+
+function fn(tags, name, items){
+  if(items === undefined){
+    items = "주문가능한 상품이 없습니다";
+  }
+  return (tags[0] + name + tags[1] + items + tags[2])
+}
+
+data.forEach(v => {
+  
+	let template = fn`<div>welcome ${v.name} !!</div>
+				<h2>주문가능한항목</h2><div>${v.items}</div>`;
+ 	document.querySeloctor("#message").innerHTML += template;
+ 
+})
+```
+
+- 함수와 조합하여 ``로 사용할 수있다.
+- `function fn(tags, name, items)`에서 tags는 밸류로 구분되는 항목들이 list형식으로 저장되어 들어가고, 각 밸류는 순서대로 name, items에 저장된다.
+
+## 9. Function
+
+### 9.1. Arrow Function
+
+```javascript
+setTimeout(function(){
+    console.log("time-out")
+           }, 1000);
+```
+
+위를 아래와 같이 쓸 수 있다. 보통 콜백함수에 많이 쓰인다.
+
+```javascript
+setTimeout(() => console.log("time-out"), 1000);
+```
+
+### 9.2. Arrow function 의 this context
+
+```javascript
+const myObj = {
+    runTimeout() {
+        setTimeout(function(){
+          this.printData();
+        }.bind(this), 200);
+    },
+  
+    printData() {
+    	console.log("hi code!")
+  	}
+}
+
+myObj.runTimeout();
+```
+
+- 위 코드에서 this는 window를 의미하기 때문에, `bind(this)`를 해주어야 한다.
+- 화살표 함수를 쓰면 아래와 같이 표현가능하다.
+
+```javascript
+const myObj = {
+    runTimeout() {
+        setTimeout(() => this.printData(), 200);
+    },
+  
+    printData() {
+    	console.log("hi code!")
+  	}
+}
+
+myObj.runTimeout();
+```
+
+- 화살표 함수에서 this는 context를 유지하고 있다. 즉, 콜백함수를 감싸고 있는 오브젝트를 기준으로 this를 가진다.
+
+### 9.3. default parameters
+
+```javascript
+function sum(value, size){
+    size = size || 1;
+    return value * size;
+}
+
+console.log(sum(3));
+```
+
+보통은 파라미터가 주어지지 않을 때 위처럼 기본값을 설정해 주었지만, ES6부터는 아래와 같이 가능하다.
+
+```javascript
+function sum(value, size=1){
+    return value * size;
+}
+
+console.log(sum(3));
+```
+
+### 9.4. rest parameters
+
+```javascript
+function checkNum(){
+    const argArray = Array.prototype.slice.call(arguments);
+    console.log(toString.call(argArray));
+    const result = argArray.every((v) => typeof v === "numver")
+    console.log(result);
+}
+
+const result = checkNum(10,2,"55");
+```
+
+기존에는 arguments를 쪼개서 어레이로 만들어주었다.
+
+위 함수를  rest parameters를 써서 아래와 같이 쓸 수 있다. `...arg`
+
+`...arg` 는 인자를 배열로 바로 바꾸어준다.
+
+```javascript
+function checkNum(...argArray){
+    const result = argArray.every((v) => typeof v === "numver")
+    console.log(result);
+}
+
+const result = checkNum(10,2,"55");
+```
+
+## 10. 객체
+
+```javascript
+function Health(name){
+    this.name = name;
+}
+
+Health.prototype.showHealth = function() {
+    console.log(this.name + "님 안녕하세요");
+}
+
+const h = new Health("crong");
+h.showHealth();
+```
+
+- ES6에서는 class가 추가되어 아래와 같이 표현가능하다.
+
+```javascript
+class Health{
+    constructor(name, lastTime){
+        this.name = name;
+        this.lastTime = lastTime;
+    }
+    
+    showHealth(){
+        console.log("안녕하세요" + this.name);
+    }
+}
+
+const myHealth = new Health("crong");
+myHealth.showHealth();
+```
+
+### 10.1. Object assign으로 JS객체만들기
+
+```javascript
+const healthObj = {
+    showHealth : function() {
+    	console.log("오늘 운동시간 :" + this.healthTime);
+	}
+}
+
+const myHealth = Object.create(healthObj);
+
+myHealth.healthTime = "11:20";
+myHealth.name = "crong";
+
+console.log(myHealth);
+```
+
+- object assign은 ES5에 추가된 개념으로 위 코드를 아래와 같이 쓸 수 있다.
+
+```javascript
+const healthObj = {
+    showHealth : function() {
+    	console.log("오늘 운동시간 :" + this.healthTime);
+	}
+}
+
+const myHealth = Object.assign(Object.create(healthObj), {
+    name : "crong",
+    healthTime : "11:20"
+});
+
+console.log(myHealth);
+```
+
+### 10.2. Object assign으로 Immutable 객체만들기
+
+```javascript
+const previousObj = {
+    name : "crong",
+    lastTime : "11:20"
+};
+
+const myHealth = Object.assign({}, previousObj, {
+    lastTime : "12:30",
+    age : 99
+});
+
+console.log(myHealth);
+```
+
+- previousObj를 기반으로, 원하는`key:value`를 추가하거나 수정하여 새로운 객체를 생성한다.
+- 이때 previousObj와 myHealth는 다른 객체이다.
+
+### 10.3. Object setPrototypeOf로 객체만들기
+
+```javascript
+const healthObj = {
+    showHealth : function() {
+    	console.log("오늘 운동시간 :" + this.healthTime);
+	},
+    setHealth : function() {
+        this.healthTime = newTime;
+    }
+}
+
+const myHealth = {
+    name : "crong",
+    healthTime : "11:20"
+};
+
+Object.setPrototypeOf(myHealth, healthObj);
+
+const newObj = Object.setPrototypeOf({
+    name : "rupy",
+    healthTime : "11:50"
+}, healthObj);
+
+console.log(myHealth);
+console.log(newObj);
+```
+
+- 프로토타입 객체만 추가
+
+- `Object.setPrototypeOf(myHealth, healthObj);` : myHealth객체에 healthObj 프로토 타입을 추가하고  생성된 객체를 반환함
+
+### 10.4. Object setPrototypeOf 로 객체간 prototype chain생성하기
+
+```javascript
+const healthObj = {
+    showHealth : function() {
+    	console.log("오늘 운동시간 :" + this.healthTime);
+	},
+    setHealth : function(newTime) {
+        this.healthTime = newTime;
+    }
+}
+
+//child Obj
+const healthChildObj= {
+    getAge : function(){
+        return this.age;
+    }
+}
+
+Object.setPrototypeOf(healthChildObj, healthObj);
+
+const childObj = Object.setPrototypeOf({
+    age : 22
+}, healthChildObj);
+
+childObj.setHealth("11:55");
+childObj.showHealth();
+```
+
+- 다른 객체에서 사용되는 함수를 사용하고 싶을 때 chain을 생성하여 다른 객체의 함수를 사용할 수 있다. `Object.setPrototypeOf(healthChildObj, healthObj);`
+
+## 11. Module
+
+### 11.1. module의 이해 (export & import)
+
+자바스크립트에서 module은 실험적인 단계이다. 많은 파일간의 서로의 의존성을 정리할 필요가 있다. 
+
+> App.js
+
+```javascript
+import mylog, {getTime, getCurrentHour} from './myLogger';
+
+log('test');
+log(getTime());
+log(getCurrentHour());
+```
+
+> myLogger.js
+
+```javascript
+export default function log(data){
+	console.log(data)
+}
+
+export const getTime = () => {
+    return Date.now();
+}
+
+export const getCurrentHour = () => {
+    return (new Date).getHours();
+}
+```
+
+- `import log, {getTime, getCurrentHour} from './myLogger';` 처럼 다른 파일의 함수를 가져 올 수 있다.
+- 이때, 각 함수는 `export` 되어야 한다. `export default`는 import할 때 원하는 이름으로 지정이 가능하다.
+
+## 12. Proxy
+
+오브젝트의 변화를 감지할 때, get이나 set 함수를 이용하여 다른 작업을 가능하게 한다.
+
+```javascript
+const myObj = {name:'crong'};
+porxy = new Proxy(myObj,{
+    get : function (target, property, receiver){
+        console.log("get value");
+        return target[property];
+    },
+    set : function (target, property, value){
+        console.log("set value");
+        target[property] = value;
+    }
+});
+proxy.name;
+proxy.name = "rupy";
+```
+
+- myObj와 proxy는 서로 다른 객체이다.
+- `proxy.name;`  -> get이 실행됨
+- `proxy.name = "rupy"` -> set이 실행됨 (target : myObj / property : name / value : "rupy")
+
+- myObj를 숨기고 싶다면 아래와 같이 사용도 가능하다.
+
+```javascript
+porxy = new Proxy({name:'crong'},{
+    get : function (target, property, receiver){
+        console.log("get value");
+        return target[property];
+    },
+    set : function (target, property, value){
+        console.log("set value");
+        target[property] = value;
+    }
+});
+```
+
