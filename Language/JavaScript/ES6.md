@@ -10,7 +10,43 @@ ES 6
 
 <!-- TOC -->
 
-- 
+- [1. Scope](#1-scope)
+	- [1.1. let](#11-let)
+	- [1.2. closure](#12-closure)
+	- [1.3. Const](#13-const)
+	- [1.4. immutable array](#14-immutable-array)
+- [2. String](#2-string)
+- [3. Array](#3-array)
+	- [1.1 for of](#11-for-of)
+	- [1.2. spread operator](#12-spread-operator)
+	- [1.3. from](#13-from)
+- [4. Object](#4-object)
+- [5. Destructuring](#5-destructuring)
+	- [5.1. Destructuring Array](#51-destructuring-array)
+	- [5.2. Destructuring Object](#52-destructuring-object)
+	- [5.3. Destructuring 활용 JSON 파싱](#53-destructuring-활용-json-파싱)
+	- [5.4. Destructuring 활용 이벤트 객체 전달](#54-destructuring-활용-이벤트-객체-전달)
+- [6. Set & WeakSet](#6-set--weakset)
+	- [6.1. Set](#61-set)
+	- [6.2. WeakSet](#62-weakset)
+- [7. Map & WeakMap](#7-map--weakmap)
+	- [7.2. WeakMap을 이용한 클래스 인턴스 변수 보호](#72-weakmap을-이용한-클래스-인턴스-변수-보호)
+- [8. Template](#8-template)
+	- [8.1. template 처리](#81-template-처리)
+	- [8.2. Tagged Template literals](#82-tagged-template-literals)
+- [9. Function](#9-function)
+	- [9.1. Arrow Function](#91-arrow-function)
+	- [9.2. Arrow function 의 this context](#92-arrow-function-의-this-context)
+	- [9.3. default parameters](#93-default-parameters)
+	- [9.4. rest parameters](#94-rest-parameters)
+- [10. 객체](#10-객체)
+	- [10.1. Object assign으로 JS객체만들기](#101-object-assign으로-js객체만들기)
+	- [10.2. Object assign으로 Immutable 객체만들기](#102-object-assign으로-immutable-객체만들기)
+	- [10.3. Object setPrototypeOf로 객체만들기](#103-object-setprototypeof로-객체만들기)
+	- [10.4. Object setPrototypeOf 로 객체간 prototype chain생성하기](#104-object-setprototypeof-로-객체간-prototype-chain생성하기)
+- [11. Module](#11-module)
+	- [11.1. module의 이해 (export & import)](#111-module의-이해-export--import)
+- [12. Proxy](#12-proxy)
 
 <!-- /TOC -->
 
@@ -162,7 +198,7 @@ function addMark(){
     let newData = newArray.map(function(value){
         return value + "!";
     });
-    
+
     console.log(newData);
 }
 addMark(1,2,3,4,5,6);
@@ -441,7 +477,7 @@ const data = [
         order : false,
     }
 ]
-    
+
 const template = `<div>welcome ${data[0].name} !!`;
 console.log(template);
 ```
@@ -474,11 +510,11 @@ function fn(tags, name, items){
 }
 
 data.forEach(v => {
-  
+
 	let template = fn`<div>welcome ${v.name} !!</div>
 				<h2>주문가능한항목</h2><div>${v.items}</div>`;
  	document.querySeloctor("#message").innerHTML += template;
- 
+
 })
 ```
 
@@ -510,7 +546,7 @@ const myObj = {
           this.printData();
         }.bind(this), 200);
     },
-  
+
     printData() {
     	console.log("hi code!")
   	}
@@ -527,7 +563,7 @@ const myObj = {
     runTimeout() {
         setTimeout(() => this.printData(), 200);
     },
-  
+
     printData() {
     	console.log("hi code!")
   	}
@@ -610,7 +646,7 @@ class Health{
         this.name = name;
         this.lastTime = lastTime;
     }
-    
+
     showHealth(){
         console.log("안녕하세요" + this.name);
     }
@@ -740,7 +776,7 @@ childObj.showHealth();
 
 ### 11.1. module의 이해 (export & import)
 
-자바스크립트에서 module은 실험적인 단계이다. 많은 파일간의 서로의 의존성을 정리할 필요가 있다. 
+자바스크립트에서 module은 실험적인 단계이다. 많은 파일간의 서로의 의존성을 정리할 필요가 있다.
 
 > App.js
 
