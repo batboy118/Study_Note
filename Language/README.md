@@ -18,6 +18,8 @@
 
 #### 4. [JavaScript](JavaScript/README.md)
 
+#### 5. [Ruby](Ruby/README.md)
+
 
 
 ### [To do List : 추가로 배우고 싶은 언어]
