@@ -1,6 +1,6 @@
 # 🎨Django
 
-> Django : Web back-end Framework
+> Django : Web back-end Framework with Python
 
 <br>
 

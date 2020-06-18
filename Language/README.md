@@ -12,11 +12,11 @@
 
 #### 1. [C](C/README.md)
 
-#### 2. [C++](C++/README.md)
+#### 2. [C++](C++/README.md) (정리필요)
 
-#### 3. [Python](Python/README.md)
+#### 3. [Python](Python/README.md) (정리중)
 
-#### 4. [JavaScript](JavaScript/README.md)
+#### 4. [JavaScript](JavaScript/README.md) (정리 필요)
 
 #### 5. [Ruby](Ruby/README.md)
 
