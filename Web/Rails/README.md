@@ -12,5 +12,5 @@
 
 ### [ Category ]
 
-0. 
+0. [Rails 시작하기](00.Rails시작하기.md)
 
