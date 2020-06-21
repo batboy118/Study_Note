@@ -13,4 +13,7 @@
 ### [ Category ]
 
 0. [Rails 시작하기](00.Rails시작하기.md)
+1. [Rails Dynamic Page](01.RailsDynamicWebPage.md)
+2. [Rails Accociation 1](02.RailsAccociation1.md)
+
 
