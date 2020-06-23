@@ -17,5 +17,6 @@
 2. [Rails Accociation 1](02.RailsAccociation1.md)
 3. [Rails Accociation 2](03.RailsAccociation2.md)
 4. [Rails Authentication](04.RailsAuthentication.md)
+5. [Rails Authorization](05.RailsAuthorization.md)
 
 
