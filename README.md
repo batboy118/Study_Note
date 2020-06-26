@@ -37,8 +37,8 @@
 
 - HTML & CSS / Django / Express / Rails
 
-#### 5. [ETC](ETC/README.md)
+#### 4. [ETC](ETC/README.md)
 
 - Linux / Git / Docker / MLX /
 
-#### 6. [Books](Books/README.md)
+#### 5. [Books](Books/README.md)
