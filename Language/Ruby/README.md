@@ -19,7 +19,3 @@
 0. [Ruby 심화](04.Ruby심화.md)  
 0. 정규식 정리 필요
 
-
-
-99. [PRACTICAL_OBJECT-ORIENTED_DESIGN_IN_RUBY](99.PRACTICAL_OBJECT-ORIENTED_DESIGN_IN_RUBY.md) - Sandi Metz
-

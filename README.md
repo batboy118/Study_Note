@@ -31,17 +31,14 @@
 
 #### 2. [Language](Language/README.md)
 
-- C / C++ / Python /
+- C / C++ / Python / JavaScript / Ruby
 
 #### 3. [Web](Web/README.md)
 
-- HTML & CSS /
+- HTML & CSS / Django / Express / Rails
 
-#### 5. [Data Science](Data_science/README.md)
-
-- NLP /
-
-#### 6. [ETC](ETC/README.md)
+#### 5. [ETC](ETC/README.md)
 
 - Linux / Git / Docker / MLX /
 
+#### 6. [Books](Books/README.md)
