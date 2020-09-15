@@ -15,6 +15,7 @@
 **생활코딩 [DATABASE 1&2 - MySQL]**
 
 0. [데이터베이스란](00.데이터베이스란.md)
-1. [MySQL서론](01.MySQL서론.md)
-2. 
-
+1. [MySQL 스키마](01.MySQL_스키마.md)
+2. [MySQL CRUD](02.MySQL_CRUD.md)
+3. [MySQL INDEX](03.MySQL_INDEX.md)
+4. [MySQL JOIN](04.MySQL_JOIN.md)
