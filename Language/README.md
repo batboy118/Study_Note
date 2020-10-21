@@ -20,6 +20,8 @@
 
 #### 5. [Ruby](Ruby/README.md)
 
+#### 6. [Java](Java/README.md)
+
 
 
 ### [To do List : 추가로 배우고 싶은 언어]
@@ -27,4 +29,3 @@
 - [ ] Go
 - [ ] Kotlin
 - [ ] Type Script
-- [ ] Java
