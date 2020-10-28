@@ -14,6 +14,8 @@
 
 #### 					1.1 [HTML & CSS](HTML_CSS/README.md)
 
+#### 1.2 [React](React/Readme.md)
+
 ### 2. Back End (Sever)
 
 #### 		2.1 [Django with Python](Django/README.md)
