@@ -1,6 +1,6 @@
-# 🥗Spring
+# 🧧JSP
 
-> Java Web Backend Framework
+> JSP
 
 <br>
 
